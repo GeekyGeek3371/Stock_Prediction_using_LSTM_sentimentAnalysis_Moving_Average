@@ -23,4 +23,5 @@ python -m http.server 9000 can help start the localhost.
 11. We are also developing a chat option for users to send us their queries or possibly have a chatbot to solve queries.
 12. On the top you can see a sliding bar showing currency values of various currencies compared to INR.
 13. Our recommendation of buying or selling stocks are dependent on scores from multiple algorithms and we also compared our performance with existing applications in our report.
+
 14 Thank you.
