@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+   <!--RUN - >python -m http.server 9000 --> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <title>Fetch Data and Plot</title>
+    </head>
+    <body>
+        
+        <canvas id="Chart" width="400" height="200"></canvas>
+        
+        <script>
+            
+            chartIt();
+
+            async function chartIt(){
+                const data =  await getData();
+                
+                const ctx = document.getElementById('Chart').getContext('2d');
+                ctx.height = 100;
+                
+                const myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.xlabels,
+                        datasets: [{
+                            label: 'Share Price',
+                            data: data.ylabels,
+                            fill: false,
+                            
+                            
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: false
+                                }
+                            }]
+                        }
+                }
+                    
+                });
+            }
+            
+            getData();
+            async function getData(){
+                const xlabels = [];
+                const ylabels = [];
+                const response = await fetch(`/csv/INFY.BO.csv`);
+                const data = await response.text();
+                
+                const table = data.split('\n').slice(1);
+                
+                table.forEach(row =>{
+                    const columns = row.split(',');
+                    const date = columns[0];
+                    const shPrice = columns[4];
+                    const sp = date.split('-');
+                   
+                    xlabels.push(sp[1]+'-'+sp[2]);
+                    ylabels.push(shPrice);
+                    
+                    
+                });
+               return {xlabels,ylabels};
+                
+
+            }
+            
+
+
+        </script>
+        <br/>
+        
+        <br/>
+        <a href="../sentiment/infosys.html" class="btn btn-info movingAvg" role="button" aria-pressed="true" style="margin-left: 18em; margin-right: 3em;">Moving Average Curve
+        </a>
+        <a href="../sentiment/infosysLSTM.html" class="btn  btn-primary" role="button" aria-pressed="true" style="margin-right: 3em;">Stock Prediction using LSTM</a>
+        <a href="../sentiment/infosysStockVol.html" class="btn  btn-warning" role="button" aria-pressed="true" style="margin-right: 3em;">Stock Volume</a>
+        <a href="../sentiment/infosysSentiment.html" class="btn  btn-warning" role="button" aria-pressed="true" style="margin-right: 3em;">News Analysis</a>
+        <a href="../compCardsFinal.html" class="btn btn-secondary" role="button" aria-pressed="true" style="margin-right: 3em;">Home</a>
+        <br/><br/><br/>
+        <h3 style="color: #2B2B52;margin-left: 700px;" >{:ans} now</h3>
+        
+       
+    </body>
+</html>
+
+
+
+
+
+
+

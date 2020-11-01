@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <link rel="stylesheet" href="./style.css">
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-custom navbar-light fixed-top" id="navi">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">STOCK PREDICTOR</a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="active nevi nav-item">
+                <a class="nav-link" href="#">All</a>
+              </li>
+              <li class="nevi nav-item">
+                <a class="nav-link" href="./topGainer.html">Top_gainers</a>
+              </li>
+              <li class="nevi nav-item">
+                <a class="nav-link" href="./topLoser.html">Top_losers</a>
+              </li>
+              <li class="nevi nav-item">
+                <a class="nav-link" href="./Stock_by_Dept.html">Stocks_by_Dept.</a>
+              </li>
+              <li class="nevi nav-item">
+                <a class="nav-link" href="#">Our_Recommendation</a>
+              </li>
+              
+        </ul>
+      </div>
+</nav>
+
+
+<div class="container-fluid" id="main">
+    <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="searchbox-input form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+          aria-label="Search" id="searcher">
+          <button class="btn btn-elegant btn-rounded btn-sm my-0" id="but" type="button" style="background-color: #A4B0BD;">Search</button>
+      </form>
+	<div class="row">
+            
+			<!-- Company -->
+			<div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+				
+			<!-- tech mahindra-->
+				
+			<img src="./assets/img/techmahindra.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/TECHM.html" style=" color: #609">
+				           Tech mahindra
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Tech mahindra</p>
+				    <span style="color: #3c4043;font-size: 14px;">856.00</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #d23f31;font-size: 14px;">-0.50%</span>
+
+					<img src="./assets/downArrow.png" height="15px">
+
+
+				
+			</div>
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 16px 16px" >
+				
+			<!-- Cipla -->
+				
+			<img src="./assets/img/cipla.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/CIPLA.html" style=" color: #609">
+				            Cipla
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Cipla</p>
+				    <span style="color: #3c4043;font-size: 14px;">804.65</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #d23f31;font-size: 14px;">-0.84%</span>
+
+					<img src="./assets/downArrow.png" height="15px">
+
+
+				
+			</div>
+			
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 30px 16px" >
+			<!-- Sun Pharmaceutical Industries Limited-->
+			<img src="./assets/img/sunpharma.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+			<a class="company" href= "/csv/SUNPHARMA.html" style=" color: #609">
+				            Sun Pharmaceutical Industries Limited
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Sun Pharmaceutical Industries Limited</p>
+				    <span style="color: #3c4043;font-size: 14px;">513.80</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #008000;font-size: 14px;">2.12%</span>
+
+					<img src="./assets/upArrow.png" height="15px">
+				
+			</div>
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 30px 16px" >
+			<!-- Bharti Airtel Limited-->
+			<img src="./assets/img/bharti.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+			<a class="company" href= "./csv/BHARTIARTL.html" style=" color: #609">
+				            Bharti Airtel Limited
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Bharti Airtel Limited</p>
+				    <span style="color: #3c4043;font-size: 14px;">425.0</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #008000;font-size: 14px;">0.13%</span>
+
+					<img src="./assets/upArrow.png" height="15px">
+
+
+				
+			</div>
+					
+					
+	</div>
+		<div class="row">
+
+			<!-- Company -->
+			<div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+				
+			<!-- Shree Cement Limited-->
+				
+			<img src="./assets/img/shreecem.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/SHREECEM.html" style=" color: #609">
+				           Shree Cement Limited
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Shree Cement Limited</p>
+				    <span style="color: #3c4043;font-size: 14px;">21,192.00</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #008000;font-size: 14px;">2.20%</span>
+
+					<img src="./assets/upArrow.png" height="15px">
+
+
+				
+			</div>
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 16px 16px" >
+				
+			<!-- Tata Steel Limited Fully Paid Ord -->
+				
+			<img src="./assets/img/tatasteel.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/TATASTEEL.html" style=" color: #609">
+				           Tata Steel Limited Fully Paid Ord
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Tata Steel Limited Fully Paid Ord</p>
+				    <span style="color: #3c4043;font-size: 14px;">371.35</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #d23f31;font-size: 14px;">-0.62%</span>
+
+					<img src="./assets/downArrow.png" height="15px">
+
+
+				
+			</div>
+			
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 30px 16px" >
+			<!-- State Bank of India-->
+
+			<img src="./assets/img/sbi.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+			<a class="company" href= "./csv/SBIN.html" style=" color: #609">
+				           State Bank of India
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: State Bank of India</p>
+				    <span style="color: #3c4043;font-size: 14px;">198.55</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #008000;font-size: 14px;">3.68%</span>
+
+					<img src="./assets/upArrow.png" height="15px">
+
+
+				
+			</div>
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 30px 16px" >
+			<!-- JSW Steel Limited Fully Paid Ord-->
+			<img src="./assets/img/jsw.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+			<a class="company" href= "./csv/JSWSTEEL.html" style=" color: #609">
+				            JSW Steel Limited Fully Paid Ord
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: JSW Steel Limited Fully Paid Ord</p>
+				    <span style="color: #3c4043;font-size: 14px;">291.50</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #d23f31;font-size: 14px;">-0.49%</span>
+
+					<img src="./assets/downArrow.png" height="15px">
+
+
+				
+			</div>
+					
+					
+	</div>
+			<div class="row">
+
+			<!-- Company -->
+			<div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+				
+			<!-- Bharti Airtel Limited-->
+				
+			<img src="./assets/img/bharti.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/BHARTIARTL.html" style=" color: #609">
+				          Bharti Airtel Limited
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Bharti Airtel Limited</p>
+				    <span style="color: #3c4043;font-size: 14px;">425.00</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #008000;font-size: 14px;">0.13%</span>
+
+					<img src="./assets/upArrow.png" height="15px">
+
+				
+			</div>
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 16px 16px" >
+				
+			<!-- GAIL (India) Limited -->
+				
+
+			<img src="./assets/img/gail.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/GAIL.html" style=" color: #609">					  
+						GAIL (India) Limited
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: GAIL (India) Limited</p>
+				    <span style="color: #3c4043;font-size: 14px;">86.10</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #008000;font-size: 14px;">2.32%</span>
+
+					<img src="./assets/upArrow.png" style="height: 15px;">
+
+
+				
+			</div>
+			
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 30px 16px" >
+			<!-- Larsen & Toubro Limited-->
+			<img src="./assets/img/larsen.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+			<a class="company" href= "./csv/LT.html" style="color: #609">
+				          Larsen & Toubro Limited
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Larsen & Toubro Limited</p>
+				    <span style="color: #3c4043;font-size: 14px;">910.05</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+					<span style="color: #008000;font-size: 14px;">3.29%</span>
+					
+					<img src="./assets/upArrow.png" style="height: 15px;">
+
+
+				
+			</div>
+			<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 30px 16px" >
+			<!-- Adani Ports and Special Economic Zone Ld-->
+			<img src="./assets/img/adnani.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+			<a class="company" href= "./csv/ADANIPORTS.html" style=" color: #609">
+				       Adani Ports and Special Economic Zone Ld
+				    </a>
+				    
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: Adani Ports and Special Economic Zone Ld</p>
+				    <span style="color: #3c4043;font-size: 14px;">357.00</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color: #d23F31;font-size: 14px;">-0.76%</span>
+
+					<img src="./assets/downArrow.png" style="height: 15px;">
+
+
+				
+			</div>
+					
+					
+	</div>	
+	<div class="row">
+		<div class="box border rounded" class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal; margin: 1em 1em;padding: 16px 16px" >
+
+        <!-- Ambuja Cement -->
+
+		<img src="./assets/img/ambuja.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                <a class="company" href= "./csv/AMBUJACEM.html" style=" color: #609">
+                        Ambuja Cement Ltd.
+                </a>
+
+                <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: AMBUJACEM</p>
+                <span style="color: #3c4043;font-size: 14px;">238.75</span>
+                <span style="color: #3c4043;font-size: 14px;">INR</span>
+                <span style="color: #008000;font-size: 14px;">0.25%</span>
+
+				<img src="./assets/upArrow.png" style="height: 15px;">
+
+
+
+        </div>
+        <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+			<!-- HDFC Life Insurance Company Ltd -->
+
+			<img src="./assets/img/hdfc.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+					<a class="company" href= "./csv/HDFCBANK.html" style=" color: #609">
+                        HDFC Life Insurance Company Ltd
+				    </a>
+
+				    <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: HDFCLIFE</p>
+				    <span style="color: #3c4043;font-size: 14px;">1235.20</span>
+				    <span style="color: #3c4043;font-size: 14px;">INR</span>
+				    <span style="color:#008000;font-size: 14px;">43.40 (3.64%)</span>
+
+					<img src="./assets/upArrow.png" style="height: 15px;">
+
+
+
+            </div>
+            <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- Bajaj auto -->
+
+				<img src="./assets/img/bajaj.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/BAJAJ-AUTO.html" style=" color: #609">
+                            Bajaj Auto Ltd
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: BAJAJ-AUTO</p>
+                        <span style="color: #3c4043;font-size: 14px;">3059.65</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #d23f31;font-size: 14px;"> −14.90 (-0.48%)</span>
+
+						<img src="./assets/downArrow.png" style="height: 15px;">
+
+            </div>
+            <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- Infosys Ltd -->
+
+				<img src="./assets/img/infosys.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/INFY.html" style=" color: #609">
+                            Infosys Ltd
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: INFY</p>
+                        <span style="color: #3c4043;font-size: 14px;">1,111.20</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #008000;font-size: 14px;"> 17.50 (1.60%)</span>
+
+						<img src="./assets/upArrow.png" style="height: 15px;">
+
+            </div>
+		</div>
+		<div class="row">
+			<div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- UltraTech Cement Ltd -->
+
+				<img src="./assets/img/ultratech.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/ULTRACEMCO.html" style=" color: #609">
+                            UltraTech Cement Ltd
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: ULTRACEMCO</p>
+                        <span style="color: #3c4043;font-size: 14px;">4300.00</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #d23f31;font-size: 14px;">-46.00 (-1.06%)</span>
+
+                        <img src="./assets/downArrow.png" style="height: 15px;">
+
+            </div>
+            <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- UPL Ltd Fully Paid Ord. Shrs -->
+
+				<img src="./assets/img/upl.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/UPL.html" style=" color: #609">
+                            UPL Ltd Fully Paid Ord. Shrs
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: UPL</p>
+                        <span style="color: #3c4043;font-size: 14px;">497.45</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #d23f31;font-size: 14px;">-11.95 (2.35%)</span>
+
+                        <img src="./assets/downArrow.png" style="height: 15px;">
+
+            </div>
+            <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- Bajaj Finserv Ltd -->
+
+				<img src="./assets/img/bajajfin.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/BAJAJFINSV.html" style=" color: #609">
+                            Bajaj Finserv Ltd
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE: BAJAJFINSV</p>
+                        <span style="color: #3c4043;font-size: 14px;">5920.00</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #008000;font-size: 14px;">+48.05 (0.82%)</span>
+
+                        <img src="./assets/upArrow.png" style="height: 15px;">
+
+            </div>
+            <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- Hindustan Unilever Ltd -->
+
+				<img src="./assets/img/hindustan.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/HINDUNILVR.html" style=" color: #609">
+                            Hindustan Unilever Ltd
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE:  HINDUNILVR</p>
+                        <span style="color: #3c4043;font-size: 14px;">2,143.10</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #d23f31;font-size: 14px;">−17.70 (0.82%)</span>
+
+                        <img src="./assets/downArrow.png" style="height: 15px;">
+
+            </div>
+		</div>
+		<div class="row">
+			 <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 16px"  >
+
+                <!-- NPTC ltd -->
+				<img src="./assets/img/ntpc.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+
+                        <a class="company" href= "./csv/NTPC.html" style=" color: #609">
+                            NTPC Limited
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE:  NTPC</p>
+                        <span style="color: #3c4043;font-size: 14px;">83.05</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #008000;font-size: 14px;">+0.45 (0.54%)</span>
+
+                        <img src="./assets/upArrow.png" style="height: 15px;">
+
+            </div>
+			 <div class="box border rounded"  class="col-sm" class="rounded-sm" style="font-family: arial,sans-serif;font-weight: normal;margin: 1em 1em;padding: 16px 16px 40px 30px"  >
+
+                <!-- Reliance ltd -->
+
+				<img src="./assets/img/reliance.JPG" style="width:128px;height:128px;margin-right:20px;"></br>
+                        <a class="company" href= "./csv/RELIANCE.html" style=" color: #609">
+                            Reliance Ltd.
+                        </a>
+
+                        <p style="color: rgba(0,0,0,.62);font-size: 14px;">NSE:  Realince</p>
+                        <span style="color: #3c4043;font-size: 14px;">2,239.00</span>
+                        <span style="color: #3c4043;font-size: 14px;">INR</span>
+                        <span style="color: #d23f31;font-size: 14px;">-0.25 (0.01%)</span>
+
+                        <img src="./assets/downArrow.png" style="height: 15px;">
+
+            </div>
+		</div>
+	
+</div>
+
+<script src="./search.js"></script>
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1><b> CHAT WITH EXPERTS</b></h1>
+
+    <label for="msg"><b>ENTER YOUR MESSAGE</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+</html>
