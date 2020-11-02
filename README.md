@@ -2,12 +2,19 @@
 Steps to run our application:-
 1. Download the files.
 2. Download following python packages-
- 	Beautiful Soup
- 	VADER sentiment analysis
- 	NLTK
- 	mpdl3
+ 	
+	Beautiful Soup
+ 	
+	VADER sentiment analysis
+ 	
+	NLTK
+ 	
+	mpdl3
+	
 	matplotlib
+	
 	numpy
+	
 	pandas
 Important – Running the files on VSCode using live server is recommended or the user can run it in localhost 9000 manually.
 python -m http.server 9000 can help start the localhost.
