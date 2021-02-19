@@ -31,4 +31,10 @@ python -m http.server 9000 can help start the localhost.
 12. On the top you can see a sliding bar showing currency values of various currencies compared to INR.
 13. Our recommendation of buying or selling stocks are dependent on scores from multiple algorithms and we also compared our performance with existing applications in our report.
 
+14. Screenshots 
+    ![all](https://github.com/GeekyGeek3371/Stock_Prediction_using_LSTM_sentimentAnalysis_Moving_Average/blob/main/screenshots/all.png?raw=true)
+    ![b](https://github.com/GeekyGeek3371/Stock_Prediction_using_LSTM_sentimentAnalysis_Moving_Average/blob/main/screenshots/infy.png?raw=true)
+    ![c](https://github.com/GeekyGeek3371/Stock_Prediction_using_LSTM_sentimentAnalysis_Moving_Average/blob/main/screenshots/lstm.png?raw=true)
+    ![d](https://github.com/GeekyGeek3371/Stock_Prediction_using_LSTM_sentimentAnalysis_Moving_Average/blob/main/screenshots/movingAvg.png?raw=true)
+
 14 Thank you.
